@@ -12,6 +12,7 @@ const categoriaRutas = require("./src/routes/categoriaRutas.js");
 const cerrarSesionRutas = require("./src/routes/cerrarSesionRutas.js");
 const recuperacionRutas = require("./src/routes/recuperacionRutas.js");
 
+
 const app = express();
 
 connectDB();
