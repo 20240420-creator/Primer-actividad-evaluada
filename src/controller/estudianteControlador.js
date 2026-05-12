@@ -1,5 +1,5 @@
-const bcrypt = from("bcryptjs");
-const studentModel = from ("../model/estudiantes.js")
+const bcrypt = require("bcryptjs");
+const studentModel = require ("../model/estudiantes.js")
 
 const estudianteControlador = {};
 
@@ -205,4 +205,4 @@ estudianteControlador.delete = async (req, res) => {
     }
 };
 
-export default estudianteControlador;
+module.exports =  estudianteControlador;

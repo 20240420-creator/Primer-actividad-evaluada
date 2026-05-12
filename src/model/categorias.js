@@ -1,4 +1,4 @@
-const mongoose = from("mongoose");
+const mongoose = require("mongoose");
 
 const categorySchema = new mongoose.Schema({
     categoryName: {
@@ -21,4 +21,4 @@ const categorySchema = new mongoose.Schema({
     timestamps: true
 });
 
-export default mongoose.model("categorias", categorySchema);
+module.exports = mongoose.model("categorias", categorySchema);

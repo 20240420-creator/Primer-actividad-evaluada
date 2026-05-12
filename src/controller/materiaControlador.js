@@ -1,4 +1,4 @@
-const subjectModel = from("../model/materias.js");
+const subjectModel = require("../model/materias.js");
 
 const materiaControlador = {};
 
@@ -78,4 +78,4 @@ materiaControlador.delete = async (req, res) => {
     }
 };
 
-export default materiaControlador;
+module.exports = materiaControlador;

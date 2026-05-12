@@ -1,16 +1,16 @@
-const express = from("express");
-const cookieParser = from("cookie-parser");
-from("dotenv").config();
+const express = require("express");
+const cookieParser = require("cookie-parser");
+require("dotenv").config();
 
-const connectDB = from("./database");
+const connectDB = require("./database");
 
-const estudianteRutas = from("./src/rutas/estudianteRutas");
-const profesorRutas = from("./src/rutas/profesorRutas");
-const materiaRutas = from("./src/rutas/materiaRutas");
-const tareaRutas = from("./src/rutas/tareaRutas");
-const categoriaRutas = from("./src/rutas/categoriaRutas");
-const cerrarSesionRutas = from("./src/rutas/cerrarSesionRutas");
-const recuperacionRutas = from("./src/rutas/recuperacionRutas");
+const estudianteRutas = require("./src/routes/estudianteRutas.js");
+const profesorRutas = require("./src/routes/profesorRutas.js");
+const materiaRutas = require("./src/routes/materiaRutas.js");
+const tareaRutas = require("./src/routes/tareaRutas.js");
+const categoriaRutas = require("./src/routes/categoriaRutas.js");
+const cerrarSesionRutas = require("./src/routes/cerrarSesionRutas.js");
+const recuperacionRutas = require("./src/routes/recuperacionRutas.js");
 
 const app = express();
 
@@ -31,4 +31,4 @@ app.get("/", (req, res) => {
     res.send("API funcionando correctamente");
 });
 
-export default app;
+module.exports = app;

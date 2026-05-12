@@ -1,4 +1,4 @@
-const categoryModel = from ("../model/categorias.js");
+const categoryModel = require ("../model/categorias.js");
 
 const categoriaControlador = {};
 
@@ -78,4 +78,4 @@ categoriaControlador.delete = async (req, res) => {
     }
 };
 
-export default categoriaControlador;
+module.exports = categoriaControlador;

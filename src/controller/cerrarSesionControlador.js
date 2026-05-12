@@ -10,4 +10,4 @@ cerrarSesionControlador.logout = async (req, res) => {
     }
 };
 
-export default cerrarSesionControlador;
+module.exports = cerrarSesionControlador;

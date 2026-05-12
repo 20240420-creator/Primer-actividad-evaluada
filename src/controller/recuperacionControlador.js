@@ -1,6 +1,6 @@
-const bcrypt = from("bcryptjs");
-const studentModel = from("../model/estudiantes.js");
-const teacherModel = from("../model/profesores.js");
+const bcrypt = require("bcryptjs");
+const studentModel = require("../model/estudiantes.js");
+const teacherModel = require("../model/profesores.js");
 
 const recuperacionControlador = {};
 
@@ -81,4 +81,4 @@ recuperacionControlador.resetPassword = async (req, res) => {
     }
 };
 
-export default recuperacionControlador;
+module.exports = recuperacionControlador;

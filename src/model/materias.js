@@ -1,4 +1,4 @@
-const mongoose = from("mongoose");
+const mongoose = require("mongoose");
 
 const subjectSchema = new mongoose.Schema({
     subjectName: {
@@ -18,4 +18,4 @@ const subjectSchema = new mongoose.Schema({
     timestamps: true
 });
 
-export default mongoose.model("materias", subjectSchema);
+module.exports = mongoose.model("materias", subjectSchema);

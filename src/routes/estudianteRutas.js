@@ -1,6 +1,6 @@
-const express = from("express");
+const express = require("express");
 const router = express.Router();
-const estudianteControlador = from("../controller/estudianteControlador.js");
+const estudianteControlador = require("../controller/estudianteControlador.js");
 
 router.post("/register", estudianteControlador.register);
 router.post("/verify-email", estudianteControlador.verifyEmail);
@@ -10,4 +10,4 @@ router.get("/:id", estudianteControlador.getById);
 router.put("/:id", estudianteControlador.update);
 router.delete("/:id", estudianteControlador.delete);
 
-export default router;
+module.exports = router;

@@ -1,7 +1,7 @@
-const express = from("express");
+const express = require("express");
 const router = express.Router();
-const cerrarSesionControlador = from("../controller/cerrarSesionControlador.js");
+const cerrarSesionControlador = require("../controller/cerrarSesionControlador.js");
 
 router.post("/", cerrarSesionControlador.logout);
 
-export default router;
+module.exports = router;

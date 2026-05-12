@@ -1,4 +1,4 @@
-const taskModel = from("../model/tareas.js");
+const taskModel = require("../model/tareas.js");
 
 const tareaControlador = {};
 
@@ -87,4 +87,4 @@ tareaControlador.delete = async (req, res) => {
     }
 };
 
-export default tareaControlador;
+module.exports = tareaControlador;
